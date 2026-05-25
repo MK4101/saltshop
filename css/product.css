@@ -1,28 +1,34 @@
 .product-page{background:var(--color-white);border-radius:var(--border-radius-lg);padding:30px;box-shadow:var(--shadow-sm)}
 .product-layout{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.product-gallery{position:relative}
 .product-main-image{width:100%;border-radius:var(--border-radius);overflow:hidden;margin-bottom:12px;background:var(--color-border-light)}
-.product-main-image img{width:100%;aspect-ratio:4/3;object-fit:cover}
-.product-thumbs{display:flex;gap:8px;overflow-x:auto}
-.product-thumb{width:80px;height:60px;border-radius:var(--border-radius-sm);overflow:hidden;cursor:pointer;border:2px solid transparent;flex-shrink:0;transition:border-color var(--transition)}
-.product-thumb:hover,.product-thumb.active{border-color:var(--color-primary)}
-.product-thumb img{width:100%;height:100%;object-fit:cover}
+.product-main-image img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block}
+/* Миниатюры — ГОРИЗОНТАЛЬНО, max 3 в ряд */
+.product-thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:100%}
+.product-thumb{aspect-ratio:4/3;border-radius:var(--border-radius-sm);overflow:hidden;cursor:pointer;border:2px solid transparent;transition:border-color var(--transition),box-shadow var(--transition)}
+.product-thumb:hover,.product-thumb.active{border-color:var(--color-primary);box-shadow:0 0 0 1px var(--color-primary)}
+.product-thumb img{width:100%;height:100%;object-fit:cover;display:block}
 .product-info{display:flex;flex-direction:column}
 .product-title{font-size:var(--font-size-xl);margin-bottom:12px}
 .product-short-desc{color:var(--color-text-light);margin-bottom:20px;line-height:1.6}
-.product-price-block{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.product-price-block{display:flex;align-items:baseline;gap:12px;margin-bottom:8px}
 .product-price-value{font-size:var(--font-size-2xl);font-weight:700;color:var(--color-primary)}
 .product-price-unit{color:var(--color-text-muted);font-size:var(--font-size-sm)}
 .product-price-note{font-size:var(--font-size-xs);color:var(--color-text-muted);margin-bottom:16px}
 .product-price-ask{font-size:var(--font-size-lg);color:var(--color-warning);font-weight:600;margin-bottom:16px}
 .product-availability-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:var(--border-radius-sm);font-size:var(--font-size-sm);font-weight:600;margin-bottom:20px}
-.product-actions{display:flex;gap:12px;margin-bottom:24px}
-.product-chars h3{font-size:var(--font-size-lg);margin-bottom:16px}
-.chars-table{width:100%}
+.product-actions{display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap}
+.product-chars{margin-top:24px}.product-chars h3{font-size:var(--font-size-lg);margin-bottom:16px}
+.chars-table{width:100%;border-collapse:collapse}
 .chars-table tr:nth-child(odd){background:var(--color-primary-lightest)}
-.chars-table td{padding:10px 16px;font-size:var(--font-size-sm)}
-.chars-table td:first-child{font-weight:600;width:40%}
+.chars-table td{padding:10px 16px;font-size:var(--font-size-sm);vertical-align:top}
+.chars-table td:first-child{font-weight:600;width:40%;white-space:nowrap}
 .chars-table td:last-child{color:var(--color-text-light)}
 .product-full-desc{margin-top:30px;padding-top:20px;border-top:1px solid var(--color-border-light)}
 .product-full-desc h3{font-size:var(--font-size-lg);margin-bottom:12px}
 .product-full-desc p{color:var(--color-text-light);line-height:1.8}
 .modal-product{max-width:900px;max-height:90vh;overflow-y:auto}
+.modal-product .product-layout{gap:24px}
+@media(max-width:900px){.product-layout{grid-template-columns:1fr;gap:24px}.product-thumbs{grid-template-columns:repeat(3,1fr);gap:6px}}
+@media(max-width:768px){.product-page{padding:16px}.product-title{font-size:20px}.product-layout{grid-template-columns:1fr;gap:20px}.product-thumbs{grid-template-columns:repeat(3,1fr);gap:6px}.product-thumb{border-width:1.5px}.product-actions{flex-direction:column}.product-actions .btn{width:100%;justify-content:center}.product-price-value{font-size:24px}.chars-table td{padding:8px 10px;font-size:13px}.chars-table td:first-child{white-space:normal;width:45%}.modal-product{max-width:calc(100vw - 20px);padding:16px}.modal-product .product-layout{gap:16px}}
+@media(max-width:360px){.product-thumbs{grid-template-columns:repeat(3,1fr);gap:4px}}

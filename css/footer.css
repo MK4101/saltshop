@@ -3,12 +3,10 @@
 .footer-logo img{height:40px;margin-bottom:16px;filter:brightness(0) invert(1)}
 .footer-desc{font-size:var(--font-size-sm);line-height:1.6}
 .footer-heading{color:var(--color-white);font-size:var(--font-size-base);margin-bottom:16px}
-.footer-nav li{margin-bottom:8px}
-.footer-nav a{color:#ccc;font-size:var(--font-size-sm);transition:color var(--transition)}
+.footer-nav li{margin-bottom:8px}.footer-nav a{color:#ccc;font-size:var(--font-size-sm);transition:color var(--transition)}
 .footer-nav a:hover{color:var(--color-primary-light)}
 .footer-contacts a{display:flex;align-items:center;gap:8px;color:#ccc;font-size:var(--font-size-sm);margin-bottom:10px}
-.footer-contacts a svg{stroke:var(--color-primary-light);flex-shrink:0}
-.footer-contacts a:hover{color:var(--color-primary-light)}
+.footer-contacts a svg{stroke:var(--color-primary-light);flex-shrink:0}.footer-contacts a:hover{color:var(--color-primary-light)}
 .footer-address{font-size:var(--font-size-sm);margin-top:10px;line-height:1.5}
 .footer-messengers{display:flex;gap:12px;margin-top:16px}
 .footer-messenger-link{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);color:#ccc;font-size:var(--font-size-sm);transition:all var(--transition)}

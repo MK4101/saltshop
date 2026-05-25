@@ -1,10 +1,8 @@
 .sidebar{width:var(--sidebar-width);flex-shrink:0}
 .sidebar-section{background:var(--color-white);border-radius:var(--border-radius);padding:20px;box-shadow:var(--shadow-sm);margin-bottom:20px}
 .sidebar-heading{font-size:var(--font-size-base);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--color-primary-light)}
-.sidebar-nav li{margin-bottom:4px}
-.sidebar-nav a{display:block;padding:8px 12px;color:var(--color-text-light);font-size:var(--font-size-sm);border-radius:var(--border-radius-sm);transition:all .2s}
+.sidebar-nav li{margin-bottom:4px}.sidebar-nav a{display:block;padding:8px 12px;color:var(--color-text-light);font-size:var(--font-size-sm);border-radius:var(--border-radius-sm);transition:all .2s}
 .sidebar-nav a:hover,.sidebar-nav a.active{background:var(--color-primary-lightest);color:var(--color-primary)}
 .sidebar-phone,.sidebar-email{display:block;font-size:var(--font-size-sm);color:var(--color-text-light);padding:6px 0}
-.sidebar-phone:hover,.sidebar-email:hover{color:var(--color-primary)}
-.sidebar-messengers{display:flex;gap:8px;margin-top:8px}
+.sidebar-phone:hover,.sidebar-email:hover{color:var(--color-primary)}.sidebar-messengers{display:flex;gap:8px;margin-top:8px}
 @media(max-width:992px){.sidebar{display:none}}

@@ -1,12 +1,5 @@
 var Contacts={
-  init:function(settings){var c=settings.contacts,m=settings.messengers;
-    var set=function(id,t){var el=document.getElementById(id);if(el)el.textContent=t};
-    set('contact-address',c.address);set('contact-hours',c.workHours);
-    var ph=document.getElementById('contact-phone-link'),em=document.getElementById('contact-email-link');
-    if(ph){ph.href=c.phoneLink;ph.textContent=c.phone}if(em){em.href=c.emailLink;em.textContent=c.email}
-    this.renderMessengers(m);this.initMap(c)},
-  renderMessengers:function(m){var grid=document.getElementById('contact-messengers-grid');if(!grid)return;
-    var items=[[m.telegram,'💬'],[m.whatsapp,'📱'],[m.max,'✉️']];
-    grid.innerHTML=items.filter(function(it){return!!it[0]}).map(function(it){return'<a href="'+it[0].url+'" class="messenger-card" target="_blank" rel="noopener"><span class="messenger-card-icon">'+it[1]+'</span><span>'+it[0].label+'</span></a>'}).join('')},
+  init:function(settings){var c=settings.contacts,m=settings.messengers;var set=function(id,t){var el=document.getElementById(id);if(el)el.textContent=t};set('contact-address',c.address);set('contact-hours',c.workHours);var ph=document.getElementById('contact-phone-link'),em=document.getElementById('contact-email-link');if(ph){ph.href=c.phoneLink;ph.textContent=c.phone}if(em){em.href=c.emailLink;em.textContent=c.email}this.renderMessengers(m);this.initMap(c)},
+  renderMessengers:function(m){var grid=document.getElementById('contact-messengers-grid');if(!grid)return;var items=[[m.telegram,'\ud83d\udcac'],[m.whatsapp,'\ud83d\udcf1'],[m.max,'\u2709\ufe0f']];grid.innerHTML=items.filter(function(it){return!!it[0]}).map(function(it){return'<a href="'+it[0].url+'" class="messenger-card" target="_blank" rel="noopener"><span class="messenger-card-icon">'+it[1]+'</span><span>'+it[0].label+'</span></a>'}).join('')},
   initMap:function(c){var iframe=document.getElementById('contact-map');if(!iframe)return;var lat=c.mapCoords.lat,lng=c.mapCoords.lng;iframe.src='https://www.openstreetmap.org/export/embed.html?bbox='+(lng-.01)+'%2C'+(lat-.005)+'%2C'+(lng+.01)+'%2C'+(lat+.005)+'&layer=mapnik&marker='+lat+'%2C'+lng}
 };
