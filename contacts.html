@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1976D2">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="Контакты компании СольОпт. Адрес, телефон, мессенджеры.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yourusername.github.io/salt-shop/contacts.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/logo.svg">
+  <title>Контакты — СольОпт</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main class="main-content">
+    <div class="container page-layout">
+      <div id="sidebar-placeholder"></div>
+      <div class="page-content">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки"><ol itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="index.html"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1"></li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name" class="breadcrumb-current">Контакты</span><meta itemprop="position" content="2"></li>
+        </ol></nav>
+        <h1 class="page-title">Контакты</h1>
+        <div class="contacts-layout">
+          <div class="contacts-info">
+            <div class="contact-card">
+              <div class="contact-item"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2196F3" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><div><h3>Адрес</h3><p id="contact-address"></p></div></div>
+              <div class="contact-item"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2196F3" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><div><h3>Телефон</h3><a href="" id="contact-phone-link" class="contact-link"></a></div></div>
+              <div class="contact-item"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2196F3" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,4 12,13 2,4"/></svg><div><h3>Электронная почта</h3><a href="" id="contact-email-link" class="contact-link"></a></div></div>
+              <div class="contact-item"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2196F3" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><div><h3>Режим работы</h3><p id="contact-hours"></p></div></div>
+            </div>
+            <div class="contact-messengers"><h2 class="section-title-sm">Связаться через мессенджер</h2><div class="messengers-grid" id="contact-messengers-grid"></div></div>
+          </div>
+          <div class="contacts-map"><h2 class="section-title-sm">Мы на карте</h2>
+            <div class="map-container"><iframe id="contact-map" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen loading="lazy" title="Карта" src=""></iframe></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="footer-placeholder"></div>
+  <div class="modal-overlay" id="price-modal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Закрыть">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h2 class="modal-title" id="modal-title">Получить прайс-лист</h2>
+      <div id="price-form-container">
+        <p class="modal-text">Оставьте контактные данные для получения прайс-листа</p>
+        <form id="price-form" novalidate>
+          <div class="form-group">
+            <label for="price-name" class="form-label">Ваше имя</label>
+            <input type="text" id="price-name" name="name" class="form-input"
+                   placeholder="Иван Иванов">
+            <span class="form-error" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="price-phone" class="form-label">Телефон *</label>
+            <input type="tel" id="price-phone" name="phone" class="form-input"
+                   placeholder="+7 (___) ___-__-__" required>
+            <span class="form-error" id="phone-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="price-email" class="form-label">Электронная почта *</label>
+            <input type="email" id="price-email" name="email" class="form-input"
+                   placeholder="example@mail.ru" required>
+            <span class="form-error" id="email-error"></span>
+          </div>
+          <div class="form-group form-checkbox">
+            <input type="checkbox" id="price-agree" name="agree" required>
+            <label for="price-agree">Согласен на обработку персональных данных</label>
+            <span class="form-error" id="agree-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="price-submit">Отправить</button>
+        </form>
+      </div>
+      <div id="price-success-container" class="hidden">
+        <div class="success-icon">✅</div>
+        <p class="success-text">Спасибо! Ваши данные отправлены менеджеру.</p>
+        <a href="" class="btn btn-primary btn-block" id="download-price-btn" download>Скачать прайс-лист</a>
+      </div>
+    </div>
+  </div>
+  <div class="cookie-banner" id="cookie-banner" aria-hidden="true">
+    <div class="cookie-inner">
+      <p>Мы используем cookie-файлы для улучшения работы сайта.
+         Продолжая использовать сайт, вы соглашаетесь с их использованием.</p>
+      <button class="btn btn-primary btn-sm" id="cookie-accept">Принять</button>
+    </div>
+  </div>
+  <script src="js/utils.js"></script>
+  <script src="js/cookies.js"></script>
+  <script src="js/session.js"></script>
+  <script src="js/config-loader.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/price-request.js"></script>
+  <script src="js/contacts.js"></script>
+  <script src="js/seo.js"></script>
+  <script src="js/app.js"></script>
+  <script>document.addEventListener("DOMContentLoaded",function(){App.init("contacts");});</script>
+</body>
+</html>

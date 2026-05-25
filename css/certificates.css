@@ -1,0 +1,16 @@
+.certificates-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px}
+.certificate-card{background:var(--color-white);border-radius:var(--border-radius);overflow:hidden;box-shadow:var(--shadow-sm);cursor:pointer;transition:transform var(--transition),box-shadow var(--transition)}
+.certificate-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.certificate-image{width:100%;padding-top:140%;position:relative;overflow:hidden;background:var(--color-border-light)}
+.certificate-image img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+.certificate-pdf-placeholder{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--color-primary-lightest);color:var(--color-primary)}
+.certificate-pdf-icon{font-size:64px;margin-bottom:12px}
+.certificate-body{padding:16px}
+.certificate-title{font-size:var(--font-size-sm);font-weight:600;margin-bottom:6px;line-height:1.4}
+.certificate-date{font-size:var(--font-size-xs);color:var(--color-text-muted)}
+.certificate-valid{font-size:var(--font-size-xs);color:var(--color-success)}
+.modal-lightbox{max-width:800px;max-height:90vh;padding:16px}
+.lightbox-content{text-align:center}
+.lightbox-content img{max-width:100%;max-height:80vh;margin:0 auto}
+.lightbox-content iframe{width:100%;height:80vh;border:none}
+.lightbox-title{margin-top:12px;font-size:var(--font-size-base)}

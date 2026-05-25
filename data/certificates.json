@@ -1,0 +1,34 @@
+{
+  "certificates": [
+    {
+      "id": "cert-001",
+      "title": "Сертификат соответствия ГОСТ Р — таблетированная соль «Экстра»",
+      "description": "Сертификат соответствия продукции требованиям ГОСТ Р 51574-2018",
+      "type": "image",
+      "file": "assets/certificates/cert-001.jpg",
+      "thumbnail": "assets/certificates/cert-001.jpg",
+      "date": "2024-01-15",
+      "validUntil": "2027-01-14"
+    },
+    {
+      "id": "cert-002",
+      "title": "Декларация о соответствии — таблетированная соль «Стандарт»",
+      "description": "Декларация о соответствии продукции техническому регламенту",
+      "type": "image",
+      "file": "assets/certificates/cert-002.jpg",
+      "thumbnail": "assets/certificates/cert-002.jpg",
+      "date": "2024-03-20",
+      "validUntil": "2027-03-19"
+    },
+    {
+      "id": "cert-003",
+      "title": "Сертификат ISO 9001 — система менеджмента качества",
+      "description": "Сертификат международного стандарта",
+      "type": "pdf",
+      "file": "assets/certificates/cert-003.pdf",
+      "thumbnail": "assets/certificates/cert-003-thumb.jpg",
+      "date": "2023-06-01",
+      "validUntil": "2026-05-31"
+    }
+  ]
+}

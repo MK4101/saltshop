@@ -1,0 +1,109 @@
+{
+  "company": {
+    "name": "СольОпт",
+    "shortName": "СольОпт",
+    "description": "Оптовая продажа таблетированной соли для систем водоподготовки",
+    "fullDescription": "Компания «СольОпт» — надёжный поставщик таблетированной соли для систем водоподготовки. Мы работаем напрямую с заводами-изготовителями и предлагаем выгодные условия оптовых закупок для предприятий, управляющих компаний и частных клиентов.",
+    "about": [
+      "Более 10 лет на рынке водоподготовки",
+      "Прямые поставки от заводов-изготовителей",
+      "Сертифицированная продукция ГОСТ и ISO",
+      "Оперативная доставка по всей России",
+      "Индивидуальные условия для оптовых покупателей",
+      "Профессиональная консультация по подбору продукции"
+    ],
+    "advantages": [
+      {
+        "icon": "🏭",
+        "title": "Прямые поставки",
+        "text": "Работаем без посредников с крупнейшими заводами-изготовителями"
+      },
+      {
+        "icon": "✅",
+        "title": "Гарантия качества",
+        "text": "Вся продукция сертифицирована и соответствует ГОСТ"
+      },
+      {
+        "icon": "🚛",
+        "title": "Быстрая доставка",
+        "text": "Доставка по Москве и области в течение 1-2 дней"
+      },
+      {
+        "icon": "💰",
+        "title": "Оптовые цены",
+        "text": "Специальные условия при заказе от 1 тонны"
+      }
+    ],
+    "manufacturerUrl": "https://example-manufacturer.ru",
+    "manufacturerName": "ООО «Завод Соль-Продукт»",
+    "marketplaces": [
+      {
+        "name": "Wildberries",
+        "url": "https://www.wildberries.ru/seller/example",
+        "icon": "🛒"
+      },
+      {
+        "name": "Ozon",
+        "url": "https://www.ozon.ru/seller/example",
+        "icon": "🛍️"
+      },
+      {
+        "name": "Яндекс Маркет",
+        "url": "https://market.yandex.ru/shop/example",
+        "icon": "📦"
+      }
+    ]
+  },
+  "contacts": {
+    "phone": "+7 (495) 123-45-67",
+    "phoneLink": "tel:+74951234567",
+    "email": "info@saltopt.ru",
+    "emailLink": "mailto:info@saltopt.ru",
+    "address": "г. Москва, ул. Промышленная, д. 15, стр. 3",
+    "workHours": "Пн-Пт: 9:00 - 18:00, Сб: 10:00 - 15:00",
+    "mapCoords": {
+      "lat": 55.7558,
+      "lng": 37.6173
+    },
+    "mapZoom": 15
+  },
+  "messengers": {
+    "telegram": {
+      "url": "https://t.me/saltopt",
+      "username": "@saltopt",
+      "label": "Telegram"
+    },
+    "whatsapp": {
+      "url": "https://wa.me/74951234567",
+      "label": "WhatsApp"
+    },
+    "max": {
+      "url": "https://max.ru/saltopt",
+      "label": "Max"
+    }
+  },
+  "mail": {
+    "managerEmail": "manager@saltopt.ru",
+    "service": "mail.ru",
+    "formspreeEndpoint": "https://formspree.io/f/YOUR_FORM_ID",
+    "emailjsServiceId": "service_mailru",
+    "emailjsTemplateId": "template_price",
+    "emailjsPublicKey": "YOUR_PUBLIC_KEY"
+  },
+  "seo": {
+    "siteUrl": "https://yourusername.github.io/salt-shop",
+    "defaultTitle": "СольОпт — Оптовая продажа таблетированной соли для водоподготовки",
+    "defaultDescription": "Купить таблетированную соль оптом для систем водоподготовки. Прямые поставки от завода. Сертифицированная продукция. Доставка по России.",
+    "defaultKeywords": "таблетированная соль, соль для водоподготовки, соль оптом, регенерация смягчителей, таблетированная соль купить, соль для фильтров",
+    "ogImage": "assets/logo/og-image.jpg"
+  },
+  "priceList": {
+    "fileUrl": "assets/pricelist/pricelist.pdf",
+    "fileName": "Прайс-лист_СольОпт.pdf"
+  },
+  "legal": {
+    "disclaimer": "Данный сайт носит исключительно информационный характер и не является публичной офертой, определяемой положениями части 2 статьи 437 ГК РФ. Цвет продукции представленной на сайте может отличаться от реального, в связи с различными настройками ваших устройств для просмотра.",
+    "inn": "7712345678",
+    "companyLegal": "ООО «СольОпт»"
+  }
+}

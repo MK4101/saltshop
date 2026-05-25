@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://yourusername.github.io/salt-shop/sitemap.xml
+Disallow: /data/
+Disallow: /js/
+Disallow: /css/
+Disallow: /templates/

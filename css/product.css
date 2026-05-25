@@ -1,0 +1,28 @@
+.product-page{background:var(--color-white);border-radius:var(--border-radius-lg);padding:30px;box-shadow:var(--shadow-sm)}
+.product-layout{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.product-main-image{width:100%;border-radius:var(--border-radius);overflow:hidden;margin-bottom:12px;background:var(--color-border-light)}
+.product-main-image img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.product-thumbs{display:flex;gap:8px;overflow-x:auto}
+.product-thumb{width:80px;height:60px;border-radius:var(--border-radius-sm);overflow:hidden;cursor:pointer;border:2px solid transparent;flex-shrink:0;transition:border-color var(--transition)}
+.product-thumb:hover,.product-thumb.active{border-color:var(--color-primary)}
+.product-thumb img{width:100%;height:100%;object-fit:cover}
+.product-info{display:flex;flex-direction:column}
+.product-title{font-size:var(--font-size-xl);margin-bottom:12px}
+.product-short-desc{color:var(--color-text-light);margin-bottom:20px;line-height:1.6}
+.product-price-block{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.product-price-value{font-size:var(--font-size-2xl);font-weight:700;color:var(--color-primary)}
+.product-price-unit{color:var(--color-text-muted);font-size:var(--font-size-sm)}
+.product-price-note{font-size:var(--font-size-xs);color:var(--color-text-muted);margin-bottom:16px}
+.product-price-ask{font-size:var(--font-size-lg);color:var(--color-warning);font-weight:600;margin-bottom:16px}
+.product-availability-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:var(--border-radius-sm);font-size:var(--font-size-sm);font-weight:600;margin-bottom:20px}
+.product-actions{display:flex;gap:12px;margin-bottom:24px}
+.product-chars h3{font-size:var(--font-size-lg);margin-bottom:16px}
+.chars-table{width:100%}
+.chars-table tr:nth-child(odd){background:var(--color-primary-lightest)}
+.chars-table td{padding:10px 16px;font-size:var(--font-size-sm)}
+.chars-table td:first-child{font-weight:600;width:40%}
+.chars-table td:last-child{color:var(--color-text-light)}
+.product-full-desc{margin-top:30px;padding-top:20px;border-top:1px solid var(--color-border-light)}
+.product-full-desc h3{font-size:var(--font-size-lg);margin-bottom:12px}
+.product-full-desc p{color:var(--color-text-light);line-height:1.8}
+.modal-product{max-width:900px;max-height:90vh;overflow-y:auto}
