@@ -1,0 +1,232 @@
+{
+  "categories": [
+    {
+      "id": "tablet-salt",
+      "name": "Таблетированная соль",
+      "description": "Соль в таблетках для систем умягчения воды"
+    },
+    {
+      "id": "bulk-salt",
+      "name": "Соль техническая",
+      "description": "Техническая соль для промышленной водоподготовки"
+    },
+    {
+      "id": "accessories",
+      "name": "Аксессуары",
+      "description": "Аксессуары и расходные материалы для систем водоподготовки"
+    }
+  ],
+  "filters": {
+    "weight": [
+      {
+        "value": "10",
+        "label": "10 кг"
+      },
+      {
+        "value": "25",
+        "label": "25 кг"
+      },
+      {
+        "value": "50",
+        "label": "50 кг"
+      },
+      {
+        "value": "1000",
+        "label": "1000 кг (1 тонна)"
+      }
+    ],
+    "manufacturer": [
+      {
+        "value": "salt-product",
+        "label": "Соль-Продукт"
+      },
+      {
+        "value": "tyretsalt",
+        "label": "Тыретский солерудник"
+      },
+      {
+        "value": "mozyr",
+        "label": "Мозырьсоль"
+      }
+    ],
+    "availability": [
+      {
+        "value": "in-stock",
+        "label": "В наличии"
+      },
+      {
+        "value": "on-order",
+        "label": "Под заказ"
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": "prod-001",
+      "category": "tablet-salt",
+      "name": "Таблетированная соль «Экстра» 25 кг",
+      "slug": "sol-extra-25",
+      "shortDescription": "Высококачественная таблетированная соль для бытовых и промышленных систем умягчения воды",
+      "fullDescription": "Таблетированная соль «Экстра» производится из высококачественного сырья методом прессования. Идеально подходит для всех типов систем умягчения воды. Содержание NaCl не менее 99.7%.",
+      "characteristics": {
+        "Масса": "25 кг",
+        "Содержание NaCl": "не менее 99.7%",
+        "Форма": "таблетки",
+        "Диаметр таблетки": "25 мм",
+        "Высота таблетки": "15 мм",
+        "Производитель": "Соль-Продукт",
+        "Страна": "Россия",
+        "ГОСТ": "Р 51574-2018",
+        "Срок годности": "не ограничен"
+      },
+      "photos": {
+        "main": "assets/products/prod-001/main.jpg",
+        "gallery": [
+          "assets/products/prod-001/main.jpg",
+          "assets/products/prod-001/photo-2.jpg",
+          "assets/products/prod-001/photo-3.jpg"
+        ]
+      },
+      "price": {
+        "type": "value",
+        "value": 450,
+        "currency": "₽",
+        "unit": "мешок",
+        "note": "Цена при заказе от 10 мешков"
+      },
+      "availability": {
+        "type": "in-stock",
+        "text": "В наличии"
+      },
+      "weight": "25",
+      "manufacturer": "salt-product",
+      "seo": {
+        "title": "Таблетированная соль Экстра 25 кг — купить оптом | СольОпт",
+        "description": "Купить таблетированную соль Экстра 25 кг оптом. NaCl 99.7%.",
+        "keywords": "таблетированная соль экстра, соль 25 кг"
+      }
+    },
+    {
+      "id": "prod-002",
+      "category": "tablet-salt",
+      "name": "Таблетированная соль «Стандарт» 25 кг",
+      "slug": "sol-standart-25",
+      "shortDescription": "Таблетированная соль для систем водоподготовки. Оптимальное соотношение цены и качества",
+      "fullDescription": "Таблетированная соль «Стандарт» — экономичное решение для систем умягчения воды. Содержание NaCl не менее 99.5%.",
+      "characteristics": {
+        "Масса": "25 кг",
+        "Содержание NaCl": "не менее 99.5%",
+        "Форма": "таблетки",
+        "Производитель": "Тыретский солерудник",
+        "Страна": "Россия",
+        "ГОСТ": "Р 51574-2018"
+      },
+      "photos": {
+        "main": "assets/products/prod-002/main.jpg",
+        "gallery": [
+          "assets/products/prod-002/main.jpg",
+          "assets/products/prod-002/photo-2.jpg",
+          "assets/products/prod-002/photo-3.jpg"
+        ]
+      },
+      "price": {
+        "type": "value",
+        "value": 380,
+        "currency": "₽",
+        "unit": "мешок",
+        "note": ""
+      },
+      "availability": {
+        "type": "in-stock",
+        "text": "В наличии"
+      },
+      "weight": "25",
+      "manufacturer": "tyretsalt",
+      "seo": {
+        "title": "Таблетированная соль Стандарт 25 кг — купить оптом | СольОпт",
+        "description": "Таблетированная соль Стандарт 25 кг оптом. NaCl 99.5%.",
+        "keywords": "таблетированная соль стандарт, соль оптом"
+      }
+    },
+    {
+      "id": "prod-003",
+      "category": "tablet-salt",
+      "name": "Таблетированная соль «Мозырьсоль» 25 кг",
+      "slug": "sol-mozyr-25",
+      "shortDescription": "Белорусская таблетированная соль высшего качества",
+      "fullDescription": "Таблетированная соль «Мозырьсоль» производится на одном из крупнейших солерудников Беларуси. Содержание NaCl не менее 99.7%.",
+      "characteristics": {
+        "Масса": "25 кг",
+        "Содержание NaCl": "не менее 99.7%",
+        "Форма": "таблетки",
+        "Производитель": "Мозырьсоль",
+        "Страна": "Беларусь"
+      },
+      "photos": {
+        "main": "assets/products/prod-003/main.jpg",
+        "gallery": [
+          "assets/products/prod-003/main.jpg",
+          "assets/products/prod-003/photo-2.jpg",
+          "assets/products/prod-003/photo-3.jpg"
+        ]
+      },
+      "price": {
+        "type": "ask",
+        "value": null,
+        "currency": "₽",
+        "unit": "",
+        "note": "Уточняйте у менеджера"
+      },
+      "availability": {
+        "type": "ask",
+        "text": "Уточняйте у менеджера"
+      },
+      "weight": "25",
+      "manufacturer": "mozyr",
+      "seo": {
+        "title": "Таблетированная соль Мозырьсоль 25 кг — купить оптом | СольОпт",
+        "description": "Белорусская таблетированная соль Мозырьсоль 25 кг.",
+        "keywords": "мозырьсоль, таблетированная соль беларусь"
+      }
+    },
+    {
+      "id": "prod-004",
+      "category": "bulk-salt",
+      "name": "Соль техническая мешок 50 кг",
+      "slug": "sol-tekhnicheskaya-50",
+      "shortDescription": "Техническая соль для промышленных систем водоподготовки",
+      "fullDescription": "Техническая соль для промышленного использования. Фасовка 50 кг.",
+      "characteristics": {
+        "Масса": "50 кг",
+        "Содержание NaCl": "не менее 98.0%",
+        "Форма": "помол №3",
+        "Производитель": "Соль-Продукт",
+        "Страна": "Россия"
+      },
+      "photos": {
+        "main": "assets/products/prod-004/main.jpg",
+        "gallery": [
+          "assets/products/prod-004/main.jpg"
+        ]
+      },
+      "price": {
+        "type": "value",
+        "value": 320,
+        "currency": "₽",
+        "unit": "мешок",
+        "note": ""
+      },
+      "availability": {
+        "type": "in-stock",
+        "text": "В наличии"
+      },
+      "weight": "50",
+      "manufacturer": "salt-product",
+      "seo": {
+        "title": "Соль техническая 50 кг — купить оптом | СольОпт",
+        "description": "Техническая соль 50 кг оптом.",
+        "keywords": "соль техническая, соль 50 кг"
+      }
+    }
+  ]
+}

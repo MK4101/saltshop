@@ -34,8 +34,8 @@
         "text": "Специальные условия при заказе от 1 тонны"
       }
     ],
-    "manufacturerUrl": "https://example-manufacturer.ru",
-    "manufacturerName": "ООО «Завод Соль-Продукт»",
+    "manufacturerUrl": "https://soleprom-tula.ru/",
+    "manufacturerName": "ООО «Киреевский солепромысел»",
     "marketplaces": [
       {
         "name": "Wildberries",
@@ -44,7 +44,7 @@
       },
       {
         "name": "Ozon",
-        "url": "https://www.ozon.ru/seller/example",
+        "url": "https://www.ozon.ru/seller/art-lite/",
         "icon": "🛍️"
       },
       {
